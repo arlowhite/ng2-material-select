@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "equals": "^1.0.5",
-    "ng2-material-dropdown": "0.4.3"
+    "ng2-material-dropdown": "arlowhite/ng2-material-dropdown"
   },
   "keywords": [
     "angular 2",
