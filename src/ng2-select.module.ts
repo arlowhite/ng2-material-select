@@ -3,7 +3,7 @@ import { Ng2Select } from './ng2-select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { Ng2DropdownModule } from 'ng2-material-dropdown';
+import { Ng2DropdownModule } from 'ng2-material-dropdown/src/modules/ng2-dropdown.module';
 
 @NgModule({
     imports: [

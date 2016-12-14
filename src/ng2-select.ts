@@ -9,7 +9,7 @@ import {
 
 import { Selectable } from './decorators/selectable';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { Ng2Dropdown } from 'ng2-material-dropdown';
+import { Ng2Dropdown } from 'ng2-material-dropdown/src/modules/components/dropdown/ng2-dropdown';
 import { SelectAccessor } from './accessor';
 const equal = require('equals');
 
