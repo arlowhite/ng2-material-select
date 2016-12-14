@@ -83,6 +83,7 @@
   "homepage": "https://github.com/Gbuomprisco/ng2-material-select",
   "main": "./dist/ng2-select.bundle.js",
   "files": [
+    "src",
     "dist",
     "index.ts"
   ]
