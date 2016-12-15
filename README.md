@@ -7,6 +7,10 @@ When you upgrade to that version of angular-cli, you will see this error:
 
 I'm not that familiar with webpack and didn't want to spend time migrating ng2-material-select's webpack config from version 1 to 2. So instead, I just decided to compile the source code directly as part of the angular-cli project.
 
+## Instructions
+
+Note: If your angular-cli project isn't setup for SCSS, I don't think this will work.
+
 Add these dependencies to **package.json**
 ```json
     "equals": "^1.0.5",
