@@ -1,3 +1,35 @@
+# About this Fork
+
+The purpose of this fork is to be able to use ng2-material-select with **angular-cli-beta.22-1**
+
+When you upgrade to that version of angular-cli, you will see this error:
+> Error: Ng2SelectModule is not an NgModule
+
+I'm not that familiar with webpack and didn't want to spend time migrating ng2-material-select's webpack config from version 1 to 2. So instead, I just decided to compile the source code directly as part of the angular-cli project.
+
+Add these dependencies to **package.json**
+```json
+    "equals": "^1.0.5",
+    "ng2-material-dropdown": "arlowhite/ng2-material-dropdown",
+    "ng2-material-select": "arlowhite/ng2-material-select",
+```
+
+`npm install`
+
+Create *src/equals.d.ts*
+```ts
+declare var equal:EqualStatic;
+
+declare module 'equals' {
+  export = equal;
+}
+
+type EqualStatic = (a: any, b: any, memos?: any) => boolean;
+```
+
+That should be it. Try `ng serve`
+
+
 # Angular2 Material Select
 
 A component inspired by material design for creating visually nice select components.
